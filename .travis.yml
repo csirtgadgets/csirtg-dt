@@ -1,8 +1,6 @@
 sudo: required
-dist: trusty
 language: python
 cache: pip
-
 python:
   - 3.6
   - 3.7
@@ -22,10 +20,10 @@ notifications:
 
 deploy:
   provider: pypi
-  user: wesyoung
+  user: "__token__"
   on:
     branch: master
     tags: true
     condition: $TRAVIS_PYTHON_VERSION = "3.7"
   password:
-    secure: rZHKbS5nIfmkQ2JMHuPrevaDACnVFN1FQa0sfP9eV+dKVMUS021vHTH+MVV2zzm3PVoqjdX6j1MTnZnmiOZRcCdDhuhxJnLw+iSjiX5s4vK6W6X0/JRbDDvOHaRuUqRIjKaRkYVcGZWETVarMUBxQKCCNt2mrHFpZo0ou5EEbb/4PxaRcUWvLQR1pFABZS6JrrJagbBATpHYE1aQbE1azGAFCG0PVKLi5FGjAnSCIV5130YyCxivgmc+jONKkkPpcLqQ0vaT9aKxwSWgKzy5J8ss6+sRsT7B4MGgVOe5XuqnLx+DmCe1dXwt6orhzVjRBml0otqhPyasqNC3Hp4O0sj124fi0cA1DUvrI3EaNSiXoHpCMGrhBrn9oCqHQFrSL2kS/Hs79svq7lhX2Wjy36VIB+JnHVgjnUwhoPAwO8QXKptJkemeLcSpLWTYYlRnwW/AiXbDk2UXV5pBjJ2um/LRCr7JLYsTALgUMfDxuhn7ZJLt9duJ9A9viIPUqJtZaIjAD+eQzK4Lfsh3t6ia88VJomKsmJseNaVefLkTdWNOIns6vROBclU4aW2t5CsqgpBNO6zJXfvq8s3CWOkyzJpf5Dk/fW3/lpg69L5fnNKhaJdNr0n+KYo3NA93EoiveqQd+Wx02k3DAuYfuLB+nH+eKswzjDq6W1NzBgFURww=
+    secure: oZ9XlCwdLZ8kHAis6esXSVErX3Twob9hja14/9RsVSFaRW27UZZf4ISMjhTVfH9za3crZCKDqVGldYot8E/jR06JhMECNwt9E2Gq8j/BQucHMIdPd7JnMEyVTQwPSiH/dZSOFj6cESOOJFzyXrsmp+zrzXA43hXaeU0ilOYdLiXxGyxklglX2910YhQ2LQf5SMjMHGdzHjBQTG4gE0wB201LJBbsfqMbuIUFhjSU2j1agUuhyL07eTrK6SwQ4uPcssfAr552GTKYkBOFMEmOv6unST6kG5rx3KA6AMdqSeWucjG82xD48VM1Zi7dAhlUgrcZfQ6GVFMPZvjgouXmhB2HsMGWpZIcvDldL35Ti6OBEaAj80Ch+oFjkOLFKgjMVYC+5KOSCWGn5OpCg9vWQHUZzxLcjzVC3hxvzYUN3nNujhgrWn9tUKWp4u767EaJaGs9utOdYD9KIt60vkP+E668jU5kDF4ErSQlW22iEVSrBVo41YOpmna7s26DHoLV/iiD8nKm5vAxcaHFoiAAA9PoakArOKXXdbK8zz4ICXbOVcZvCMj0c+lbJztqizTDciuUMhMfAu+PtoxbEWXcvXuuIDMGwYgbXwkdUV+9wVWAlZrR6NVPsidT17ZID1wGLtyH2VvDks4lDuaJz3Re2GDMnTe4FUk2ScF/yU/ZZxw=
